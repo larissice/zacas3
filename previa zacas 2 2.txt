@@ -1,0 +1,777 @@
+Algoritmo "ZacasGame 2"
+//Zacas game, remodelado e sem módulos.
+Var
+   //armazenadores de resposta
+   opcao, senha, i, n, y, bye: caractere
+   //contadores e vetor
+   m, f, p: inteiro
+   vet:vetor [1..50] de inteiro
+
+Inicio
+
+   //tela inicial jogo (tela 1)
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("10101010101010101001010101010101010101001010101010101")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("10101010101010101001010101010101010101001010101010101")
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("1|   _ __ __                              __ __    |0")
+   escreval ("0|  /_ __   \  __ _   __ _   __ _  ___   /  _  \   |0")
+   escreval ("1|      /   / / _` | /  __| / _` |/ __| |__| |  |  |1")
+   escreval ("0|     /   / | (_| ||  (__ | (_| |\__ \      /  /  |0")
+   escreval ("1|    /   /   \__,_| \____| \__,_||___/     /  /   |1")
+   escreval ("0|   /   /__ __ __ __ __ __ __ __ __ __   /  /___  |0")
+   escreval ("0|  /     G        A        M        E | |       \ |0")
+   escreval ("1|  \__ __ __ __ __ __ __ __ __ __ __ _| |__ __ _/ |1")
+   escreval ("0|                                                 |0")
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("0101001|                                   |010101010")
+   escreval ("1010101| a . r e f e r e n c e s . g a m e |010101011")
+   escreval ("0101010|                                   |101010100")
+   escreval ("10101010101010101001010101010101010101001010101010101")
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("10101010101|  b y : l a r i s s i c e  |0101010101010")
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("10101010101010101001010101010101010101001010101010101")
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("10101010101010101001010101010101010101001010101010101")
+   escreval ("01010101010101010101001010101010101010101010010101010")
+   escreval ("10101010101010101001010101010101010101001010101010101")
+   escreval ("=====================================================")
+   escreval (">> p r e s s  e n t e r  t o  c o n t i n u e...")
+   leia (y)
+   //sair
+   se (y = "sair") entao
+      interrompa
+   fimse
+   //lia
+   escreval ("=====================================================")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("1010101010101|      __ _               |0101010101001")
+   escreval ("0101000101010|     /   /   ___  __ _   |0010100110011")
+   escreval ("1101010111010|    /   /   /  / /  ` |  |1101010010100")
+   escreval ("0110011001010|   /   /_  /  / | (_| |  |0101001010010")
+   escreval ("1101001010100|  /_____/ /__/   \__,_|  |1010100100101")
+   escreval ("0010101001001|   _ __ __ __ __ __ __   |0101000110010")
+   escreval ("0101010100101|  /c .h .a .t. b .o .t\  |0010100010101")
+   escreval ("1100101010010|  \__ __ __ __ __ __ _/  |1110011001000")
+   escreval ("0101001010101|                         |0101001010101")
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("...lia entered the chat")
+   escreval ("                       ")
+   escreval (">> hello, stranger!")
+   escreval (">> eu sou a lia.")
+   escreval (">> te acompanharei durante o jogo.")
+   escreval (">> como devo te chamar?")
+   leia (n)
+   //sair
+   se (n = "sair") entao
+      interrompa
+   fimse
+   escreval (">> ok, ",n,". As instruções estão aqui:")
+   //instruções
+   escreval (" ___________________________________________________")
+   escreval ("|                                                   |")
+   escreval ("|1. O jogo possui 10 levels.                        |")
+   escreval ("|                                                   |")
+   escreval ("|2. Digite suas respostas com letras minúsculas.    |")
+   escreval ("|                                                   |")
+   escreval ("|3. Sair: digite sair                               |")
+   escreval ("|                                                   |")
+   escreval ("|4. Dica: vc pode pedir dicas digitando dica. Em    |")
+   escreval ("|alguns levels há mais de 1, digite dica 2 para     |")
+   escreval ("|visualizá-las.                                     |")
+   escreval ("|                                                   |")
+   escreval ("|5. Obs.: Ao pedir dica adicional (dica 2), você só |")
+   escreval ("|ganhará metade da pontuação do level em questão.   |")
+   escreval ("|___________________________________________________|")
+   escreval ("             ")
+   escreval (">> pressione qualquer tecla para continuar...")
+   leia (y)
+   se (i <> 0) entao
+      limpatela
+   fimse
+
+   //contador fases e pontuação
+   f <- 1
+   p <- 100
+   //levels 1
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("                        1011              ")
+   escreval ("Qual o próximo número?")
+   leia (i)
+   repita
+      //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "1100") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho outra dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| binário                                           |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "1100") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "1100"
+   f <-f+1
+   limpatela
+   //level 2
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("_ E N _ A")
+   escreval ("        ")
+   escreval ("Qual a senha?")
+   leia (i)
+   repita
+      //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "senna") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho outra dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Piloto                                            |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "senna") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "senna"
+   f <-f+1
+   limpatela
+   //level 3
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("fsociety")
+   escreval ("        ")
+   leia (i)
+   repita
+         //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "mr robot") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho outra dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Série da Amazon                                   |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "mr robot") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "mr robot"
+   f <-f+1
+   limpatela
+   // level 4
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("A B E U T W H B A P U")
+   escreval ("M O R I L P Z X Y O S")
+   escreval ("T R P C I L A T E U B")
+   escreval ("Q R E B N U V T A D W")
+   escreval ("M D S A U P E S T I Y")
+   escreval ("C K L O X R E M B M A")
+   escreval ("T A K M A M O N I S M")
+   escreval ("Q W T I O N A B H S N")
+   escreval ("Q U S T N E V R Y D U")
+   escreval ("B H A C K E R T Y I D")
+   escreval ("A B E U T W H O D I D")
+   escreval ("        ")
+   leia (i)
+   repita
+         //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "hacker") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho outra dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Pessoa que invade sistemas                                   |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "hacker") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "hacker"
+   f <-f+1
+   limpatela
+   //level 5
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("– Thor")
+   escreval ("– Acesso negado")
+   escreval ("– Thor filho de Odin")
+   escreval ("– Acesso negado")
+   escreval ("– Deus do trovão")
+   escreval ("– Acesso negado")
+   escreval ("        ")
+   leia (i)
+   repita
+         //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "playboyzinho") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho outra dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| – Droga Stark... Playboyzinho                                  |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "playboyzinho") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "playboyzinho"
+   f <-f+1
+   limpatela
+   //level 6
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("       ________________________________________      ")
+   escreval ("       _______|_______|_______|_______|_______|      ")
+   escreval ("       ___|_______|______|________|_______|____      ")
+   escreval ("       _______|_______|_______|_______|_______|      ")
+   escreval ("       ___|_______|______|________|_______|____      ")
+   escreval ("       _______|_______|_______|_______|_______|      ")
+   escreval ("       ___|_______|______|________|_______|____      ")
+   escreval ("       _______|_______|_______|_______|_______|      ")
+   escreval ("       ___|_______|______|________|_______|____      ")
+   escreval ("       _______|_______|_______|_______|_______|      ")
+   escreval ("       ___|_______|______|________|_______|____      ")
+   escreval ("       _______|_______|_______|_______|_______|      ")
+   escreval ("        ")
+   leia (i)
+   repita
+         //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "pink floyd") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho outra dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Banda                                   |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "pink floyd") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "pink floyd"
+   f <-f+1
+   limpatela
+   //level 7
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("99% infinito")
+   escreval ("        ")
+   leia (i)
+   repita       //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "dica") entao
+         escreval (">> tenho uma dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Algo do Windows                                   |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         interrompa
+      fimse
+           se (i <> "dica") e (i <> "atualização do windows") entao
+           escreval (">> resposta incorreta.")
+           interrompa
+           fimse
+                se (i = "atualização do windows") entao
+                limpatela
+                   para m de 1 ate 5 faca
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("           SEU WINDOWS SERÁ ATUALIZADO             ")
+                     escreval ("           ___________________________             ")
+                     escreval ("          |                           |            ")
+                     escreval ("          |___________________________|            ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     escreval ("                                                   ")
+                     limpatela
+                     fimpara
+
+         para m de 1 ate 10 faca
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("            ATUALIZANDO WINDOWS 10%                ")
+            escreval ("           ___________________________             ")
+            escreval ("          |]]]                        |            ")
+            escreval ("          |___________________________|            ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            limpatela
+         fimpara
+
+         para m de 1 ate 10 faca
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("            ATUALIZANDO WINDOWS 50%                ")
+            escreval ("           ___________________________             ")
+            escreval ("          |]]]]]]]]]]]]]]             |            ")
+            escreval ("          |___________________________|            ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            limpatela
+         fimpara
+
+         para m de 1 ate 10 faca
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("            ATUALIZANDO WINDOWS 80%                ")
+            escreval ("           ___________________________             ")
+            escreval ("          |]]]]]]]]]]]]]]]]]]]]]      |            ")
+            escreval ("          |___________________________|            ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            limpatela
+         fimpara
+
+         para m de 1 ate 100 faca
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("            ATUALIZANDO WINDOWS 99%                ")
+            escreval ("           ___________________________             ")
+            escreval ("          |]]]]]]]]]]]]]]]]]]]]]]]]]]]|            ")
+            escreval ("          |___________________________|            ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            escreval ("                                                   ")
+            limpatela
+         fimpara
+
+         escreval (">> Demorou?")
+         leia (y)
+         escreval (">> Culpe o Bill Gates.")
+         escreval (">> Pressione qualquer tecla para continuar...")
+         leia (y)
+         limpatela
+      fimse
+
+   ate i = "atualização do windows"
+   f <-f+1
+   limpatela
+   //level 8
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("        ")
+   escreval ("totally_not_a_virus_trust_me_im_a_horse.exe")
+   escreval ("        ")
+   leia (i)
+   repita
+         //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+      se (i = "dica") entao
+         escreval (">> tenho uma dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Presente de Grego                                 |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         interrompa
+      fimse
+      se (i <> "dica") e (i <> "cavalo de troia") entao
+         escreval (">> resposta incorreta.")
+         interrompa
+      fimse
+      se (i = "cavalo de troia") entao
+         para m de 1 ate 50 faca
+            escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+            escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+            escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+            escreval ("894Hu9fgdr8tue958[     YOU     ]4KHT4546564577J5J77")
+            escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+            escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+            escreval ("16H6J343H45J46B5B[    HAVE     ] 65N6N565N5B55B65B6")
+            escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+            escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+            escreval ("894Hu9fgdr8tue958[    BEEN    ]64KHT4546564577J5J77")
+            escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+            escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+            escreval ("16H6J343H45J46B5B[   HACKED  ]5N 65N6N565N5B55B65B6")
+            escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+            escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+            escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+            escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+            escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+            limpatela
+         fimpara
+
+         para m de 1 ate 50 faca
+            escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+            escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+            escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+            escreval ("894Hu9fgdr8tue958[     VOCÊ    ]4KHT4546564577J5J77")
+            escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+            escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+            escreval ("16H6J343H45J46B5B[     FOI     ] 65N6N565N5B55B65B6")
+            escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+            escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+            escreval ("894Hu9fgdr8958[   HACKEADO    ]64KHT4546564577J5J77")
+            escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+            escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+            escreval ("16H6J343H45J46B5B[    BEBÊ   ]5N 65N6N565N5B55B65B6")
+            escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+            escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+            escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+            escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+            escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+            limpatela
+         fimpara
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+
+
+   ate i = "cavalo de troia"
+   f <-f+1
+   limpatela
+   //level 9
+   escreval ("01010101010101010101001010101010101010101010010101011")
+   escreval ("10101010101010101001010101010101010101001010101010100")
+   escreval ("=====================================================")
+   escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   leia (i)
+   repita
+   
+   
+   
+   para m de 1 ate 10 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |            .-             |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 10 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |            -..            |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 10 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |            ...            |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 10 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |          .----            |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+//TABELA
+escreval ("lvl ",f," | points ",p," | player ",n,"            ")
+escreval ("                                                   ")
+escreval ("            DECODIFIQUE O CÓDIGO MORSE             ")
+escreval ("             SEGUINDO A TABELA ABAIXO              ")
+escreval ("         _________________________________         ")
+escreval ("        | A .-    J .---  S ...   1 .---- |        ")
+escreval ("        | B -...  K -.-   T -     2 ..--- |        ")
+escreval ("        | C -.-.  L .-..  U ..-   3 ...-- |        ")
+escreval ("        | D -..   M --    V ...-  4 ....- |        ")
+escreval ("        | E .     N -.    W .--   5 ..... |        ")
+escreval ("        | F ..-.  O ---   X -..-  6 -.... |        ")
+escreval ("        | G --.   P .--.  Y -.--  7 --... |        ")
+escreval ("        | H ....  Q --.-  Z --..  8 ---.. |        ")
+escreval ("        | I ..    R .-.   0 ----- 9 ----. |        ")
+escreval ("        |_________________________________|        ")
+escreval ("                                                   ")
+
+escreval (">> Digite o código, sem espaços:")
+leia (i)
+      //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+se (i = "ads1") entao
+         escreval (">>Parabéns! Dê enter para ir pro próximo nível...")
+         leia (y)
+         limpatela
+      fimse
+      se (i = "dica") entao
+         escreval (">> tenho uma dica para você, ",n,":")
+         escreval (" ___________________________________________________")
+         escreval ("| Turma                                   |")
+         escreval ("|___________________________________________________|")
+         p <- p-5
+         leia (i)
+      fimse
+      se (i <> "dica") e (i <> "ads1") entao
+         escreval (">> resposta incorreta.")
+         leia (i)
+      fimse
+
+   ate i = "ads1"
+   f <-f+1
+
+//level 10
+escreval ("lvl:",f,"   pontos:",p,"  player:",n)
+   escreval ("=====================================================")
+   escreval ("Neo")
+   leia (i)
+   repita
+         //sair
+   se (i = "sair") entao
+      interrompa
+   fimse
+se (i = "matrix") entao
+para m de 1 ate 50 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+fimpara
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu      w3lc0m3           4564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654H    t0   09867ty7fd6g7fR6J6")
+escreval ("16H6J343H45J46B5B65B565B46N5495N465N6N565N5B55B65B6")
+escreval ("565mn56   th3    b0645b0645nb86n4564n8bn56b459647b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958h     m4tr1x     HT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+fimse
+limpatela
+se (i = "dica") entao
+escreval (">> filme")
+fimse
+
+se (i <> "matrix") e (i <> "dica") entao
+escreval (">> resposta errada")
+fimse
+ate i = "matrix"
+
+escreval (">> ",n," você chegou ao fim do jogo.")
+escreval (">> essa foi a sua pontuação: ",p)
+escreval (">> te aguardo na próxima.")
+interrompa
+Fimalgoritmo

@@ -1,0 +1,116 @@
+algoritmo "windows"
+var
+   n: caractere
+   m:inteiro
+   vet:vetor [1..50] de inteiro
+inicio
+para m de 1 ate 5 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |            .-             |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |            -..            |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |            ...            |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("               MEMORIZE A SEQUÊNCIA                ")
+escreval ("           ___________________________             ")
+escreval ("          |          .----            |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+//TABELA
+escreval ("lvl 00 | points 90 | player ",n,"                  ")
+escreval ("                                                   ")
+escreval ("            DECODIFIQUE O CÓDIGO MORSE             ")
+escreval ("             SEGUINDO A TABELA ABAIXO              ")
+escreval ("         _________________________________         ")
+escreval ("        | A .-    J .---  S ...   1 .---- |        ")
+escreval ("        | B -...  K -.-   T -     2 ..--- |        ")
+escreval ("        | C -.-.  L .-..  U ..-   3 ...-- |        ")
+escreval ("        | D -..   M --    V ...-  4 ....- |        ")
+escreval ("        | E .     N -.    W .--   5 ..... |        ")
+escreval ("        | F ..-.  O ---   X -..-  6 -.... |        ")
+escreval ("        | G --.   P .--.  Y -.--  7 --... |        ")
+escreval ("        | H ....  Q --.-  Z --..  8 ---.. |        ")
+escreval ("        | I ..    R .-.   0 ----- 9 ----. |        ")
+escreval ("        |_________________________________|        ")
+escreval ("                                                   ")
+
+escreval (">> Digite o código, sem espaços:")
+leia (m)
+
+fimalgoritmo

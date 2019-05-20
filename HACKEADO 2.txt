@@ -1,0 +1,250 @@
+algoritmo "HACKER"
+var
+  m:inteiro
+  vet:vetor [1..50] de inteiro
+inicio
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            YOU             ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[            HAVE            ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            BEEN            ]4KHT4546577")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[           HACKED           ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            VOCÊ            ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[             FOI            ]65N655B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[          HACKEADO          ]64KHT455J77")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[            BEBÊ            ]5N65N6N56B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            YOU             ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[            HAVE            ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            BEEN            ]4KHT4546577")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[           HACKED           ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            VOCÊ            ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[             FOI            ]65N655B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[          HACKEADO          ]64KHT455J77")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[            BEBÊ            ]5N65N6N56B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            YOU             ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[            HAVE            ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            BEEN            ]4KHT4546577")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[           HACKED           ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            VOCÊ            ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[             FOI            ]65N655B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[          HACKEADO          ]64KHT455J77")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[            BEBÊ            ]5N65N6N56B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            YOU             ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[            HAVE            ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            BEEN            ]4KHT4546577")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[           HACKED           ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            VOCÊ            ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[             FOI            ]65N655B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[          HACKEADO          ]64KHT455J77")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[            BEBÊ            ]5N65N6N56B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            YOU             ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[            HAVE            ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            BEEN            ]4KHT4546577")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[           HACKED           ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            VOCÊ            ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[             FOI            ]65N655B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[          HACKEADO          ]64KHT455J77")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("16H6J343H4[            BEBÊ            ]5N65N6N56B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+para m de 1 ate 5 faca
+escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            YOU             ]4KHT4546577")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[            HAVE            ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr[            BEEN            ]4KHT4546577")
+escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+escreval ("894Hu9fgdr[           HACKED           ]4KHT4546577")
+escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+limpatela
+fimpara
+
+escreval (">> OK. É BRINCADEIRA.")
+escreval (">> Pressione qualquer tecla para continuar...")
+leia (m)
+
+fimalgoritmo

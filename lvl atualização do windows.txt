@@ -1,0 +1,122 @@
+algoritmo "windows"
+var
+  m:inteiro
+  vet:vetor [1..50] de inteiro
+inicio
+para m de 1 ate 5 faca
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("           SEU WINDOWS SERÁ ATUALIZADO             ")
+escreval ("           ___________________________             ")
+escreval ("          |                           |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 10 faca
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("            ATUALIZANDO WINDOWS 10%                ")
+escreval ("           ___________________________             ")
+escreval ("          |]]]                        |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 10 faca
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("            ATUALIZANDO WINDOWS 50%                ")
+escreval ("           ___________________________             ")
+escreval ("          |]]]]]]]]]]]]]]             |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 10 faca
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("            ATUALIZANDO WINDOWS 80%                ")
+escreval ("           ___________________________             ")
+escreval ("          |]]]]]]]]]]]]]]]]]]]]]      |            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+para m de 1 ate 100 faca
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("            ATUALIZANDO WINDOWS 99%                ")
+escreval ("           ___________________________             ")
+escreval ("          |]]]]]]]]]]]]]]]]]]]]]]]]]]]|            ")
+escreval ("          |___________________________|            ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+escreval ("                                                   ")
+limpatela
+fimpara
+
+escreval (">> Demorou?")
+leia (m)
+escreval (">> Culpe o Bill Gates.")
+escreval (">> Pressione qualquer tecla para continuar...")
+leia (m)
+
+fimalgoritmo
